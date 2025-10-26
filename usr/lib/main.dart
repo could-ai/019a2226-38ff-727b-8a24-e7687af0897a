@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Shop App',
+      title: 'দোকান অ্যাপ',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -52,23 +52,23 @@ class _AppHomeState extends State<AppHome> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Text('🛍️'),
-            label: 'Shop',
+            label: 'দোকান',
           ),
           BottomNavigationBarItem(
             icon: Text('🚚'),
-            label: 'Parcel',
+            label: 'পার্সেল',
           ),
           BottomNavigationBarItem(
             icon: Text('🛒'),
-            label: 'Grocery',
+            label: 'গ্রোসারি',
           ),
           BottomNavigationBarItem(
             icon: Text('🍔'),
-            label: 'Food',
+            label: 'খাবার',
           ),
           BottomNavigationBarItem(
             icon: Text('💊'),
-            label: 'Medicine',
+            label: 'ওষুধ',
           ),
         ],
         currentIndex: _selectedIndex,
@@ -86,12 +86,12 @@ class ShopPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Shop Home'),
+        title: const Text('দোকান হোম'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: const Center(
         child: Text(
-          'Welcome to Shop Home Page!\nBrowse all categories here.',
+          'দোকান হোম পেজে স্বাগতম!\nএখানে সব ক্যাটেগরি ব্রাউজ করুন।',
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
@@ -107,12 +107,12 @@ class ParcelPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Parcel'),
+        title: const Text('পার্সেল'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: const Center(
         child: Text(
-          'Parcel Delivery Services\nSend and track parcels easily.',
+          'পার্সেল ডেলিভারি সার্ভিস\nপার্সেল পাঠান এবং ট্র্যাক করুন সহজে।',
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
@@ -128,12 +128,12 @@ class GroceryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Grocery'),
+        title: const Text('গ্রোসারি'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: const Center(
         child: Text(
-          'Fresh Groceries\nShop for daily essentials.',
+          'তাজা গ্রোসারি\nদৈনন্দিন প্রয়োজনীয় জিনিস কিনুন।',
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
@@ -149,12 +149,12 @@ class FoodPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Food'),
+        title: const Text('খাবার'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: const Center(
         child: Text(
-          'Delicious Food\nOrder your favorite meals.',
+          'সুস্বাদু খাবার\nআপনার প্রিয় খাবার অর্ডার করুন।',
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
@@ -170,12 +170,12 @@ class MedicinePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Medicine'),
+        title: const Text('ওষুধ'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: const Center(
         child: Text(
-          'Health & Medicine\nFind medicines and health products.',
+          'স্বাস্থ্য এবং ওষুধ\nওষুধ এবং স্বাস্থ্য পণ্য খুঁজুন।',
           style: TextStyle(fontSize: 20),
           textAlign: TextAlign.center,
         ),
